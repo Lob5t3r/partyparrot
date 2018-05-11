@@ -64,7 +64,7 @@ def make_slack_compatible(partyparrot_string):
     return out
 
 
-def convert_str_to_emoji(s, emojis=PARTY_PARROTS, space=' ', force=False):
+def convert_str_to_emoji(s, emojis=PARTY_PARROTS, space='_', force=False):
 
     emoji_iterator = itertools.cycle(emojis)
 

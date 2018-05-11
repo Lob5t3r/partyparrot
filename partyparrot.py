@@ -7,11 +7,11 @@ import os
 from all_characters import ALL_CHARACTERS
 
 PARTY_PARROTS = [
-    ':partyparrot:',
-    ':rightparrot:',
-    ':middleparrot:',
-    ':boredparrot:',
-    ':shuffleparrot:'
+    ':party_parrot:',
+    ':right_parrot:',
+    ':middle_parrot:',
+    ':bored_parrot:',
+    ':shuffle_parrot:'
 ]
 
 EN_SPACE = '\u2002'
@@ -40,7 +40,7 @@ def post_text_to_slack(output_string):
 
     payload = {
         'username': 'The Party Parrot',
-        'icon_emoji': ':partyparrot:',
+        'icon_emoji': ':party_parrot:',
         'text': make_slack_compatible(output_string)
     }
 
